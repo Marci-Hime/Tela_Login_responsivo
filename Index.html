@@ -4,21 +4,23 @@
     <title>Login&Cadastro</title>
 
     <link href="style.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="arquivo.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     
     <div class="container">
       <h1 class="Titulo"> 
-        <a href="" class="ativacao"> Login </a>
-        / 
-        <a href="" class="ativacao"> Cadastro </a>
+        <button type="button" onclick="login()" class="ativacao">Login </button>
+        |
+        <button type="button" onclick="cadastro()" class="ativacao"> 
+ Cadastro</button>
       </h1>
+      <hr>
 
 <!--LOGIN-->       
-      <div class="login-form active-form">
+      <div class="login-form active-form" id="login">
         <form>
-          
+
           <input
             type="text"
             name="email"
@@ -26,6 +28,7 @@
             class="input-field"
             required
           />
+
           <input
             type="password"
             name="senha"
@@ -44,7 +47,7 @@
 
 
 <!--CADASTRO-->        
-      <div class="cadastro-form">
+      <div class="cadastro-form" id="cadastro">
         <form>
           <input
             type="text"
