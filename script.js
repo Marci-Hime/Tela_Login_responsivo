@@ -5,7 +5,10 @@ function cadastro() {
 
   if (visibilidade1==true && visibilidade2==false) {
     document.getElementById("login").style.display = "none";
+    document.getElementById("BTNlogin").style.backgroundColor = "#cccccc";
+    
     document.getElementById("cadastro").style.display = "block";
+    document.getElementById("BTNcadastro").style.backgroundColor = "#fafafa";
     
     visibilidade1 = false;
     visibilidade2 = true;
@@ -16,7 +19,10 @@ function login() {
 
   if (visibilidade1==false && visibilidade2==true) {
     document.getElementById("login").style.display = "block";
+    document.getElementById("BTNlogin").style.backgroundColor = "#fafafa";
+    
     document.getElementById("cadastro").style.display = "none";
+    document.getElementById("BTNcadastro").style.backgroundColor = "#cccccc";
     
     visibilidade1 = true;
     visibilidade2 = false;
